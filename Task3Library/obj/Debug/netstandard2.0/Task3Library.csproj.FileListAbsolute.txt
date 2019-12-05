@@ -1,0 +1,7 @@
+C:\Users\Myrmex13\source\repos\Task3\Task3Library\bin\Debug\netstandard2.0\Task3Library.deps.json
+C:\Users\Myrmex13\source\repos\Task3\Task3Library\bin\Debug\netstandard2.0\Task3Library.dll
+C:\Users\Myrmex13\source\repos\Task3\Task3Library\bin\Debug\netstandard2.0\Task3Library.pdb
+C:\Users\Myrmex13\source\repos\Task3\Task3Library\obj\Debug\netstandard2.0\Task3Library.AssemblyInfoInputs.cache
+C:\Users\Myrmex13\source\repos\Task3\Task3Library\obj\Debug\netstandard2.0\Task3Library.AssemblyInfo.cs
+C:\Users\Myrmex13\source\repos\Task3\Task3Library\obj\Debug\netstandard2.0\Task3Library.dll
+C:\Users\Myrmex13\source\repos\Task3\Task3Library\obj\Debug\netstandard2.0\Task3Library.pdb

@@ -1,0 +1,14 @@
+C:\Users\Myrmex13\source\repos\Task3\Task3\bin\Debug\netcoreapp3.0\Task3.exe
+C:\Users\Myrmex13\source\repos\Task3\Task3\bin\Debug\netcoreapp3.0\Task3.deps.json
+C:\Users\Myrmex13\source\repos\Task3\Task3\bin\Debug\netcoreapp3.0\Task3.runtimeconfig.json
+C:\Users\Myrmex13\source\repos\Task3\Task3\bin\Debug\netcoreapp3.0\Task3.runtimeconfig.dev.json
+C:\Users\Myrmex13\source\repos\Task3\Task3\bin\Debug\netcoreapp3.0\Task3.dll
+C:\Users\Myrmex13\source\repos\Task3\Task3\bin\Debug\netcoreapp3.0\Task3.pdb
+C:\Users\Myrmex13\source\repos\Task3\Task3\bin\Debug\netcoreapp3.0\Task3Library.dll
+C:\Users\Myrmex13\source\repos\Task3\Task3\bin\Debug\netcoreapp3.0\Task3Library.pdb
+C:\Users\Myrmex13\source\repos\Task3\Task3\obj\Debug\netcoreapp3.0\Task3.csprojAssemblyReference.cache
+C:\Users\Myrmex13\source\repos\Task3\Task3\obj\Debug\netcoreapp3.0\Task3.AssemblyInfoInputs.cache
+C:\Users\Myrmex13\source\repos\Task3\Task3\obj\Debug\netcoreapp3.0\Task3.AssemblyInfo.cs
+C:\Users\Myrmex13\source\repos\Task3\Task3\obj\Debug\netcoreapp3.0\Task3.csproj.CopyComplete
+C:\Users\Myrmex13\source\repos\Task3\Task3\obj\Debug\netcoreapp3.0\Task3.dll
+C:\Users\Myrmex13\source\repos\Task3\Task3\obj\Debug\netcoreapp3.0\Task3.pdb
