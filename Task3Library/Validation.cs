@@ -4,19 +4,18 @@ namespace Task3Library
 {
     public class Validation
     {
-        private bool isInt = false;
-        private int startRange;
-        private int endRange;
+        private int _startRange;
+        private int _endRange;
 
         public int StartRange
         {
             get
             {
-                return startRange;
+                return _startRange;
             }
             private set
             {
-                startRange = value;
+                _startRange = value;
             }
         }
 
@@ -24,28 +23,28 @@ namespace Task3Library
         {
             get
             {
-                return endRange;
+                return _endRange;
             }
             private set
             {
-                endRange = value;
+                _endRange = value;
             }
         }
 
-        public void GetValidatedValue()
+        public void ValidateEnteredRangeParameters()
         {
-            while (isInt == false || StartRange < 0)
+            Console.WriteLine("Please enter a non-negative integer for start point of the range:");
+
+            while (!(Int32.TryParse(Console.ReadLine(), out _startRange)) || StartRange < 0)
             {
-                Console.WriteLine("Please enter a non-negative integer for start point of the range: ");
-                isInt = Int32.TryParse(Console.ReadLine(), out startRange);
+                Console.WriteLine("Entered value is invalid. Please enter a non-negative integer for start point of the range:");
             }
 
-            isInt = false;
+            Console.WriteLine($"\nPlease enter a non-negative integer for end point of the range (it should be greater than {StartRange + Constants.MinArrayLength - 2}):");
 
-            while (isInt == false || EndRange < 0 || EndRange <= StartRange + 9)
+            while (!(Int32.TryParse(Console.ReadLine(), out _endRange)) || (EndRange - StartRange) < (Constants.MinArrayLength - 1))
             {
-                Console.WriteLine($"Please enter a non-negative integer for end point of the range (it should be greater than {StartRange + 9}): ");
-                isInt = Int32.TryParse(Console.ReadLine(), out endRange);
+                Console.WriteLine($"Entered value is invalid. Please enter a non-negative integer for end point of the range (it should be greater than {StartRange + Constants.MinArrayLength - 2}):");
             }
         }
     }

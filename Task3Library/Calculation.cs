@@ -4,37 +4,45 @@ namespace Task3Library
 {
     public class Calculation
     {
-        public int Sum = 0;
-        private int startArray;
-        private int endArray;
-        private int sizeArray;
+        public int _sum = 0;
+        private int _startArray;
+        private int _endArray;
+        private int _sizeArray;
 
         public Calculation(int startValue, int endValue)
         {
-            startArray = startValue;
-            endArray = endValue;
+            _startArray = startValue;
+            _endArray = endValue;
+            _sizeArray = _endArray - _startArray + 1;
         }
 
-        public void GetSum()
+        private int[] GetGeneratedArray()
         {
-            sizeArray = endArray - startArray + 1;
-            int[] Array = new int[sizeArray];
+            int[] Array = new int[_sizeArray];
 
-            for (int i = 0; i < sizeArray; i++)
+            for (int i = 0; i < _sizeArray; i++)
             {
-                Array[i] = startArray;
-                startArray++;
+                Array[i] = _startArray;
+                _startArray++;
             }
+            return Array;
+        }
 
-            foreach (int i in Array)
+        private int GetArrayElementsSum()
+        {
+            foreach (int i in GetGeneratedArray())
             {
                 if (i % 3 == 0 && i % 5 != 0)
                 {
-                    Sum += i;
+                    _sum += i;
                 }
             }
+            return _sum;
+        }
 
-            Console.WriteLine($"Sum: {Sum}");
+        public void PrintArrayElementsSum()
+        {
+            Console.WriteLine($"\nSum of elements that are divisible by 3, but not divisible by 5: {GetArrayElementsSum()}");
         }
     }
 }
