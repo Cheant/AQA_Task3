@@ -4,7 +4,7 @@ namespace Task3Library
 {
     public class Calculation
     {
-        public int _sum = 0;
+        private int _sum = 0;
         private int _startArray;
         private int _endArray;
         private int _sizeArray;
@@ -22,8 +22,7 @@ namespace Task3Library
 
             for (int i = 0; i < _sizeArray; i++)
             {
-                Array[i] = _startArray;
-                _startArray++;
+                Array[i] = _startArray + i;
             }
             return Array;
         }
