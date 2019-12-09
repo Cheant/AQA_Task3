@@ -7,10 +7,8 @@ namespace Task3
     {
         static void Main(string[] args)
         {
-            Validation validation = new Validation();
-            validation.ValidateEnteredRangeParameters();
-
-            Calculation calculation = new Calculation(validation.StartRange, validation.EndRange);
+            Calculation calculation = new Calculation();
+            calculation.GetCustomRangeFromConsole();
             calculation.PrintArrayElementsSum();
 
             Console.ReadKey();
