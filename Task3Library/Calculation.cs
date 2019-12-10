@@ -13,6 +13,7 @@ namespace Task3Library
 
             while (!(Int32.TryParse(Console.ReadLine(), out _startValue)) || _startValue < 0)
             {
+                Console.Clear();
                 Console.WriteLine("Entered value is invalid. Please enter a non-negative integer for start point of the range:");
             }
 
@@ -20,6 +21,7 @@ namespace Task3Library
 
             while (!(Int32.TryParse(Console.ReadLine(), out _endValue)) || (_endValue - _startValue) < (Constants.MinArrayLength - 1))
             {
+                Console.Clear();
                 Console.WriteLine($"Entered value is invalid. Please enter a non-negative integer for end point of the range (it should be greater than {_startValue + Constants.MinArrayLength - 2}):");
             }
         }
@@ -50,7 +52,8 @@ namespace Task3Library
 
         public void PrintArrayElementsSum()
         {
-            Console.WriteLine($"{Environment.NewLine}Sum of elements that are divisible by 3, but not divisible by 5: {GetArrayElementsSum()}");
+            Console.Clear();
+            Console.WriteLine($"Sum of elements that are divisible by 3, but not divisible by 5: {GetArrayElementsSum()}");
         }
     }
 }

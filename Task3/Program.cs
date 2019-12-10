@@ -12,7 +12,6 @@ namespace Task3
             calculation.PrintArrayElementsSum();
 
             Console.ReadKey();
-            Console.Clear();
         }
     }
 }
