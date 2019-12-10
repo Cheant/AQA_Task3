@@ -4,7 +4,6 @@ namespace Task3Library
 {
     public class Calculation
     {
-        private int _sum = 0;
         private int _startValue;
         private int _endValue;
 
@@ -27,25 +26,26 @@ namespace Task3Library
 
         private int[] GetGeneratedArray()
         {
-            int[] Array = new int[(_endValue - _startValue + 1)];
+            int[] array = new int[(_endValue - _startValue + 1)];
 
-            for (int i = 0; i < (_endValue - _startValue + 1); i++)
+            for (int i = 0; i < array.Length; i++)
             {
-                Array[i] = _startValue + i;
+                array[i] = _startValue + i;
             }
-            return Array;
+            return array;
         }
 
         private int GetArrayElementsSum()
         {
+            int sum = 0;
             foreach (int i in GetGeneratedArray())
             {
                 if (i % 3 == 0 && i % 5 != 0)
                 {
-                    _sum += i;
+                    sum += i;
                 }
             }
-            return _sum;
+            return sum;
         }
 
         public void PrintArrayElementsSum()
